@@ -1,0 +1,4 @@
+find -L data/ -name '*.bam' \
+| sed -r \
+	-e 's#^data/#results/getdepths/#g' \
+	-e 's#\.bam#.depths.tsv#g' \
